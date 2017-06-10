@@ -43,13 +43,17 @@ class AACustomLayout: UICollectionViewLayout {
         if cache.isEmpty {
             var column = 0
             for item in 0 ..< collectionView!.numberOfItems(inSection: 0) {
-                let layoutGroup = currentLayoutGroup
+                var layoutGroup = currentLayoutGroup
+                
                 if column == 0 {
+                    if item != 0 {
+                        currentLayoutGroup = nextLayoutGroup()
+                        layoutGroup = currentLayoutGroup
+                    }
                     let blockFrame = CGRect(origin: CGPoint(x: 0, y:yOffset), size: CGSize(width: baseWidth, height: layoutGroup.groupHeight))
                     prepareLayoutAttributtes(usingGroup: layoutGroup, startingIndex: item, rect: blockFrame)
-                    currentLayoutGroup = nextLayoutGroup()
                 }
-                column = column > layoutGroup.numberOfItems - 1 ? 0 : column + 1
+                column = (column + 1) % layoutGroup.numberOfItems
             }
         }
     }

@@ -16,7 +16,7 @@ class StreamViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        dataSource = Array(1...8).map {_ in ""}
+        dataSource = Array(1...30).map {_ in ""}
         collectionView.reloadData()
         collectionView.collectionViewLayout = currentLayout
     }
@@ -31,6 +31,7 @@ extension StreamViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "StreamCollectionViewCell", for: indexPath) as! StreamCollectionViewCell
         cell.mainView.backgroundColor = UIColor.randomColor
+        cell.titleLabel.text = "\(indexPath.item)"
         return cell
     }
 }

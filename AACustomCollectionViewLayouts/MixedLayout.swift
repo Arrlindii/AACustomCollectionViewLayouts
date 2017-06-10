@@ -9,14 +9,14 @@
 import UIKit 
 
 class MixedLayot: AACustomLayout {
-    
     private let horizontalGroupHeight: CGFloat = 270
     private let snapCustomGroupHeight: CGFloat = 350.0
     
     init() {
         let layoutGroups: [LayoutGroup] = [
-            HorizontalLayoutGroup(items: 3, groupHeight: horizontalGroupHeight)
-            ,HorizontalLayoutGroup(items: 2, groupHeight: horizontalGroupHeight)
+            HorizontalLayoutGroup(items: 2, groupHeight: horizontalGroupHeight)
+            ,CircularLayoutGroup(items: 6, groupHeight: 200, itemWidth: 40.0, itemHeight: 40.0)
+            ,HorizontalLayoutGroup(items: 5, groupHeight: horizontalGroupHeight)
         ]
         super.init(layoutGroups: layoutGroups)
     }

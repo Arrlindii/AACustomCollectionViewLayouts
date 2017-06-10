@@ -88,7 +88,19 @@
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Xs-TF-Fq4">
                                                     <rect key="frame" x="0.0" y="0.0" width="195" height="148"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2s1-bC-RKs">
+                                                            <rect key="frame" x="93.5" y="64" width="8" height="21"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstItem="2s1-bC-RKs" firstAttribute="centerX" secondItem="6Xs-TF-Fq4" secondAttribute="centerX" id="26F-by-8In"/>
+                                                        <constraint firstItem="2s1-bC-RKs" firstAttribute="centerY" secondItem="6Xs-TF-Fq4" secondAttribute="centerY" id="rRu-E4-rwK"/>
+                                                    </constraints>
                                                 </view>
                                             </subviews>
                                         </view>
@@ -101,6 +113,7 @@
                                         </constraints>
                                         <connections>
                                             <outlet property="mainView" destination="6Xs-TF-Fq4" id="Sqn-zt-NX8"/>
+                                            <outlet property="titleLabel" destination="2s1-bC-RKs" id="kgs-vL-54z"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
