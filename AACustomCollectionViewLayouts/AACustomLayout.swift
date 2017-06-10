@@ -12,13 +12,14 @@ class AACustomLayout: UICollectionViewLayout {
 
     var layoutGroups: [LayoutGroup]
     private var currentLayoutGroupIndex = 0
-    private var values: [Int] = []
     private var counter  = 0
     private var yOffset: CGFloat = 0
-    private var cellPadding: CGFloat = 2
+    var cellPaddingX: CGFloat = 2
+    var cellPaddingY: CGFloat = 2
     private var baseWidth: CGFloat {
         return collectionView!.frame.width
     }
+    private var currentLayoutGroup: LayoutGroup
     
     fileprivate var cache = [UICollectionViewLayoutAttributes]()
     
@@ -30,36 +31,32 @@ class AACustomLayout: UICollectionViewLayout {
     
     init(layoutGroups: [LayoutGroup]) {
         self.layoutGroups = layoutGroups
+        currentLayoutGroup = layoutGroups.first!
         super.init()
     }
     
     required init?(coder aDecoder: NSCoder) {
-        self.layoutGroups = [LayoutGroup]()
-        super.init(coder: aDecoder)
+        fatalError("Init with coder has not been implemented")
     }
     
     override func prepare() {
         if cache.isEmpty {
             var column = 0
             for item in 0 ..< collectionView!.numberOfItems(inSection: 0) {
-                let layoutGroup = currentLayoutGroup()
+                let layoutGroup = currentLayoutGroup
                 if column == 0 {
                     let blockFrame = CGRect(origin: CGPoint(x: 0, y:yOffset), size: CGSize(width: baseWidth, height: layoutGroup.groupHeight))
                     prepareLayoutAttributtes(usingGroup: layoutGroup, startingIndex: item, rect: blockFrame)
+                    currentLayoutGroup = nextLayoutGroup()
                 }
-                column = column >= layoutGroup.numberOfItems - 1 ? 0 : column + 1
+                column = column > layoutGroup.numberOfItems - 1 ? 0 : column + 1
             }
         }
     }
-
-    private func currentLayoutGroup() ->  LayoutGroup {
-        if layoutGroups[currentLayoutGroupIndex].numberOfItems == counter {
-            counter = 0
-            currentLayoutGroupIndex = (currentLayoutGroupIndex + 1) % layoutGroups.count
-            return layoutGroups[currentLayoutGroupIndex]
-        }
-        counter += 1
-        return layoutGroups[currentLayoutGroupIndex]
+    
+    private func nextLayoutGroup() -> LayoutGroup {
+       currentLayoutGroupIndex = (currentLayoutGroupIndex + 1) % layoutGroups.count
+       return layoutGroups[currentLayoutGroupIndex]
     }
     
     private func prepareLayoutAttributtes(usingGroup group: LayoutGroup,  startingIndex item: Int, rect: CGRect)  {
@@ -73,7 +70,8 @@ class AACustomLayout: UICollectionViewLayout {
                 break
             }
             let attributes = UICollectionViewLayoutAttributes(forCellWith: indexPath)
-            attributes.frame = frames[i]
+            let insetFrame = frames[i].insetBy(dx: cellPaddingX, dy: cellPaddingY)
+            attributes.frame = insetFrame
             attributes.indexPath = indexPath
             cache.append(attributes)
         }

@@ -22,6 +22,7 @@
 		DC7E87FA1EEC2F7000D47062 /* AACustomLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7E87F91EEC2F7000D47062 /* AACustomLayout.swift */; };
 		DC7E87FC1EEC331300D47062 /* SnapDiscoveryLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7E87FB1EEC331300D47062 /* SnapDiscoveryLayout.swift */; };
 		DC7E87FE1EEC34DC00D47062 /* BadooLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7E87FD1EEC34DC00D47062 /* BadooLayout.swift */; };
+		DC9363341EEC6CD400594626 /* MixedLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9363331EEC6CD400594626 /* MixedLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		DC7E87F91EEC2F7000D47062 /* AACustomLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AACustomLayout.swift; sourceTree = "<group>"; };
 		DC7E87FB1EEC331300D47062 /* SnapDiscoveryLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapDiscoveryLayout.swift; sourceTree = "<group>"; };
 		DC7E87FD1EEC34DC00D47062 /* BadooLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BadooLayout.swift; sourceTree = "<group>"; };
+		DC9363331EEC6CD400594626 /* MixedLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MixedLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				DC7E87F91EEC2F7000D47062 /* AACustomLayout.swift */,
 				DC7E87FB1EEC331300D47062 /* SnapDiscoveryLayout.swift */,
 				DC7E87FD1EEC34DC00D47062 /* BadooLayout.swift */,
+				DC9363331EEC6CD400594626 /* MixedLayout.swift */,
 			);
 			name = CustomLayouts;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 				DC7E87F11EEC2DD000D47062 /* LayoutGroup.swift in Sources */,
 				DC7E87FA1EEC2F7000D47062 /* AACustomLayout.swift in Sources */,
 				DC7E87FC1EEC331300D47062 /* SnapDiscoveryLayout.swift in Sources */,
+				DC9363341EEC6CD400594626 /* MixedLayout.swift in Sources */,
 				DC7E87F51EEC2E5B00D47062 /* GoldenRatioLayoutGroup.swift in Sources */,
 				DC7E87F31EEC2E1200D47062 /* SnapGroupLayout.swift in Sources */,
 				DC7E87D91EEC2B8400D47062 /* StreamViewController.swift in Sources */,
@@ -360,6 +364,7 @@
 				DC7E87E71EEC2B8400D47062 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

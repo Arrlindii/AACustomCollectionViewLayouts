@@ -15,13 +15,10 @@ class StreamViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        dataSource = Array(1...50).map {_ in ""}
+        dataSource = Array(1...8).map {_ in ""}
         collectionView.reloadData()
-        configureCollectionViewLayout()
-    }
-    
-    private func configureCollectionViewLayout() {
         collectionView.collectionViewLayout = SnapDiscoveryLayout()
+        // SnapDiscoveryLayout()
     }
 }
 
@@ -38,18 +35,3 @@ extension StreamViewController: UICollectionViewDataSource {
     }
 }
 
-
-//let layoutGroups = [SnapGroupLayout(direction: .left, groupHeight: 350.0)]
-//            CircularLayoutGroup(items: 8, groupHeight: 400.0, itemWidth: 80.0, itemHeight: 80.0)
-//                                            HorizontalLayoutGroup(items: 1, groupHeight: 300.0),
-//                                            HorizontalLayoutGroup(items: 2, groupHeight: 270.0)
-//                                            HorizontalLayoutGroup(items: 3, groupHeight: 420.0),
-//                                            HorizontalLayoutGroup(items: 5, groupHeight: 200.0),
-
-//                                            SnapyGroupedHorizontaLayout(direction: .left, groupHeight: 350.0)
-//                                            HorizontalLayoutGroup(items: 3, groupHeight: 200.0),
-//                                            SnapyGroupedHorizontaLayout(direction: .right, groupHeight: 350.0)
-//        ]
-
-
-//        let collectionViewLayout = AACustomLayout(layoutGroups: layoutGroups)

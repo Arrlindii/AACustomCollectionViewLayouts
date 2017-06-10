@@ -32,7 +32,7 @@ struct CircularLayoutGroup: LayoutGroup {
             let dx: CGFloat = radius  + (rect.width - 2 * radius - itemWidth) / 2
             let dy: CGFloat = radius  + (rect.height - 2 * radius - itemHeight) / 2
             
-            let x =  radius * (CGFloat(cos(angle  * CGFloat(i) + rx))) + dx //- 5.0
+            let x =  radius * (CGFloat(cos(angle  * CGFloat(i) + rx))) + dx
             let y = radius * (CGFloat(sin(angle * CGFloat(i) + rx)))  + dy
             
             let frame = CGRect(x: x, y: y + rect.origin.y, width: itemWidth, height: itemHeight)

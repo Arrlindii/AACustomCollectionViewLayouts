@@ -19,7 +19,7 @@ class SnapDiscoveryLayout: AACustomLayout {
             HorizontalLayoutGroup(items: 3, groupHeight: horizontalGroupHeight),
             SnapGroupLayout(direction: .left, groupHeight: snapCustomGroupHeight),
             HorizontalLayoutGroup(items: 3, groupHeight: horizontalGroupHeight),
-            SnapGroupLayout(direction: .left, groupHeight: snapCustomGroupHeight)
+            SnapGroupLayout(direction: .right, groupHeight: snapCustomGroupHeight)
         ]
         super.init(layoutGroups: layoutGroups)
     }
