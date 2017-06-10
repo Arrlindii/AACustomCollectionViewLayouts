@@ -11,7 +11,7 @@ import UIKit
 class AACustomLayout: UICollectionViewLayout {
 
     var layoutGroups: [LayoutGroup]
-    private var currentLayoutGroupIndex = 0
+    private var currentLayoutGroupIndex = -1
     private var counter  = 0
     private var yOffset: CGFloat = 0
     var cellPaddingX: CGFloat = 2
@@ -43,17 +43,12 @@ class AACustomLayout: UICollectionViewLayout {
         if cache.isEmpty {
             var column = 0
             for item in 0 ..< collectionView!.numberOfItems(inSection: 0) {
-                var layoutGroup = currentLayoutGroup
-                
                 if column == 0 {
-                    if item != 0 {
-                        currentLayoutGroup = nextLayoutGroup()
-                        layoutGroup = currentLayoutGroup
-                    }
-                    let blockFrame = CGRect(origin: CGPoint(x: 0, y:yOffset), size: CGSize(width: baseWidth, height: layoutGroup.groupHeight))
-                    prepareLayoutAttributtes(usingGroup: layoutGroup, startingIndex: item, rect: blockFrame)
+                    currentLayoutGroup = nextLayoutGroup()
+                    let blockFrame = CGRect(origin: CGPoint(x: 0, y:yOffset), size: CGSize(width: baseWidth, height: currentLayoutGroup.groupHeight))
+                    prepareLayoutAttributtes(usingGroup: currentLayoutGroup, startingIndex: item, rect: blockFrame)
                 }
-                column = (column + 1) % layoutGroup.numberOfItems
+                column = (column + 1) % currentLayoutGroup.numberOfItems
             }
         }
     }
