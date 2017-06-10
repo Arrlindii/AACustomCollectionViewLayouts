@@ -12,13 +12,13 @@ class StreamViewController: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
     var dataSource: [String] = []
+    var  currentLayout: AACustomLayout!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         dataSource = Array(1...8).map {_ in ""}
         collectionView.reloadData()
-        collectionView.collectionViewLayout = SnapDiscoveryLayout()
-        // SnapDiscoveryLayout()
+        collectionView.collectionViewLayout = currentLayout
     }
 }
 
@@ -30,7 +30,7 @@ extension StreamViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "StreamCollectionViewCell", for: indexPath) as! StreamCollectionViewCell
-        cell.backgroundColor = UIColor.randomColor
+        cell.mainView.backgroundColor = UIColor.randomColor
         return cell
     }
 }

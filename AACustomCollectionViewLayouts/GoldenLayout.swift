@@ -1,5 +1,5 @@
 //
-//  BadooLayout.swift
+//  GoldenLayout.swift
 //  AACustomCollectionViewLayouts
 //
 //  Created by Arlind on 6/10/17.
@@ -8,20 +8,17 @@
 
 import UIKit
 
-class BadooLayout: AACustomLayout {
-    
-    var groupHeight: CGFloat = 80.0
+class GoldenLayout: AACustomLayout {
     
     init() {
         let layoutGroups: [LayoutGroup] = [
-            HorizontalLayoutGroup(items: 1, groupHeight: groupHeight),
-            HorizontalLayoutGroup(items: 2, groupHeight: groupHeight),
+            HorizontalLayoutGroup(items: 2, groupHeight: 270)
         ]
         super.init(layoutGroups: layoutGroups)
     }
     
     required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        super.init(coder: aDecoder)
     }
     
 }

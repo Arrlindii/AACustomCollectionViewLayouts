@@ -10,4 +10,11 @@ import UIKit
 
 class StreamCollectionViewCell: UICollectionViewCell {
     
+    @IBOutlet weak var mainView: UIView!
+    
+    func makeCircular() {
+        mainView.layer.cornerRadius = mainView.bounds.size.width / 2
+        mainView.clipsToBounds = true
+    }
+    
 }

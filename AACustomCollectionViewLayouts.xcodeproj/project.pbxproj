@@ -23,6 +23,9 @@
 		DC7E87FC1EEC331300D47062 /* SnapDiscoveryLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7E87FB1EEC331300D47062 /* SnapDiscoveryLayout.swift */; };
 		DC7E87FE1EEC34DC00D47062 /* BadooLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7E87FD1EEC34DC00D47062 /* BadooLayout.swift */; };
 		DC9363341EEC6CD400594626 /* MixedLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9363331EEC6CD400594626 /* MixedLayout.swift */; };
+		DC9363361EEC7FF400594626 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9363351EEC7FF400594626 /* IntroViewController.swift */; };
+		DC9363381EEC821400594626 /* GoldenLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9363371EEC821400594626 /* GoldenLayout.swift */; };
+		DC93633A1EEC82BF00594626 /* CircularLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9363391EEC82BF00594626 /* CircularLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +47,9 @@
 		DC7E87FB1EEC331300D47062 /* SnapDiscoveryLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapDiscoveryLayout.swift; sourceTree = "<group>"; };
 		DC7E87FD1EEC34DC00D47062 /* BadooLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BadooLayout.swift; sourceTree = "<group>"; };
 		DC9363331EEC6CD400594626 /* MixedLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MixedLayout.swift; sourceTree = "<group>"; };
+		DC9363351EEC7FF400594626 /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		DC9363371EEC821400594626 /* GoldenLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoldenLayout.swift; sourceTree = "<group>"; };
+		DC9363391EEC82BF00594626 /* CircularLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +92,7 @@
 				DC7E87E21EEC2B8400D47062 /* Info.plist */,
 				DC7E87E81EEC2C6500D47062 /* StreamCollectionViewCell.swift */,
 				DC7E87EA1EEC2CA500D47062 /* Extensions.swift */,
+				DC9363351EEC7FF400594626 /* IntroViewController.swift */,
 			);
 			path = AACustomCollectionViewLayouts;
 			sourceTree = "<group>";
@@ -109,6 +116,8 @@
 				DC7E87FB1EEC331300D47062 /* SnapDiscoveryLayout.swift */,
 				DC7E87FD1EEC34DC00D47062 /* BadooLayout.swift */,
 				DC9363331EEC6CD400594626 /* MixedLayout.swift */,
+				DC9363371EEC821400594626 /* GoldenLayout.swift */,
+				DC9363391EEC82BF00594626 /* CircularLayout.swift */,
 			);
 			name = CustomLayouts;
 			sourceTree = "<group>";
@@ -187,6 +196,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC7E87EF1EEC2DC000D47062 /* HorizontalLayoutGroup.swift in Sources */,
+				DC9363381EEC821400594626 /* GoldenLayout.swift in Sources */,
+				DC93633A1EEC82BF00594626 /* CircularLayout.swift in Sources */,
 				DC7E87F11EEC2DD000D47062 /* LayoutGroup.swift in Sources */,
 				DC7E87FA1EEC2F7000D47062 /* AACustomLayout.swift in Sources */,
 				DC7E87FC1EEC331300D47062 /* SnapDiscoveryLayout.swift in Sources */,
@@ -195,6 +206,7 @@
 				DC7E87F31EEC2E1200D47062 /* SnapGroupLayout.swift in Sources */,
 				DC7E87D91EEC2B8400D47062 /* StreamViewController.swift in Sources */,
 				DC7E87E91EEC2C6500D47062 /* StreamCollectionViewCell.swift in Sources */,
+				DC9363361EEC7FF400594626 /* IntroViewController.swift in Sources */,
 				DC7E87D71EEC2B8400D47062 /* AppDelegate.swift in Sources */,
 				DC7E87F71EEC2E7300D47062 /* CircularLayoutGroup.swift in Sources */,
 				DC7E87EB1EEC2CA500D47062 /* Extensions.swift in Sources */,
