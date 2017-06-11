@@ -103,16 +103,25 @@
                                                         <constraint firstItem="2s1-bC-RKs" firstAttribute="centerY" secondItem="6Xs-TF-Fq4" secondAttribute="centerY" id="rRu-E4-rwK"/>
                                                     </constraints>
                                                 </view>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2hB-4g-WeM">
+                                                    <rect key="frame" x="-0.5" y="0.0" width="195" height="148"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                </imageView>
                                             </subviews>
                                         </view>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
+                                            <constraint firstItem="2hB-4g-WeM" firstAttribute="height" secondItem="6Xs-TF-Fq4" secondAttribute="height" id="7G5-qc-4If"/>
                                             <constraint firstItem="6Xs-TF-Fq4" firstAttribute="leading" secondItem="K6R-bl-Jef" secondAttribute="leading" id="8zV-gH-ooc"/>
                                             <constraint firstItem="6Xs-TF-Fq4" firstAttribute="top" secondItem="K6R-bl-Jef" secondAttribute="top" id="FZN-4p-w6w"/>
                                             <constraint firstAttribute="bottom" secondItem="6Xs-TF-Fq4" secondAttribute="bottom" id="O79-Nh-abD"/>
                                             <constraint firstAttribute="trailing" secondItem="6Xs-TF-Fq4" secondAttribute="trailing" id="a7M-fQ-Doc"/>
+                                            <constraint firstItem="2hB-4g-WeM" firstAttribute="width" secondItem="6Xs-TF-Fq4" secondAttribute="width" id="rno-tP-R5C"/>
+                                            <constraint firstItem="2hB-4g-WeM" firstAttribute="centerX" secondItem="6Xs-TF-Fq4" secondAttribute="centerX" id="vcc-3W-LV6"/>
+                                            <constraint firstItem="2hB-4g-WeM" firstAttribute="centerY" secondItem="6Xs-TF-Fq4" secondAttribute="centerY" id="xgE-84-ow2"/>
                                         </constraints>
                                         <connections>
+                                            <outlet property="imageView" destination="2hB-4g-WeM" id="n7m-eq-bYo"/>
                                             <outlet property="mainView" destination="6Xs-TF-Fq4" id="Sqn-zt-NX8"/>
                                             <outlet property="titleLabel" destination="2s1-bC-RKs" id="kgs-vL-54z"/>
                                         </connections>

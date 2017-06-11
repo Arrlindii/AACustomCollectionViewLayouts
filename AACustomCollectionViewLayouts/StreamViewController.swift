@@ -33,6 +33,7 @@ extension StreamViewController: UICollectionViewDataSource {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! StreamCollectionViewCell
         cell.mainView.backgroundColor = UIColor.randomColor
         cell.titleLabel?.text = dataSource[indexPath.item]
+        cell.imageView?.image = UIImage(named:  dataSource[indexPath.item])
         return cell
     }
 }
