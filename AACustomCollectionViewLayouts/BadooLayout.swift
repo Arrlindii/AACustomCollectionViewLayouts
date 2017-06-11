@@ -10,12 +10,12 @@ import UIKit
 
 class BadooLayout: AACustomLayout {
     
-    var groupHeight: CGFloat = 80.0
+    var groupHeight: CGFloat = 60.0
     
     init() {
         let layoutGroups: [LayoutGroup] = [
-            HorizontalLayoutGroup(items: 1, groupHeight: groupHeight),
             HorizontalLayoutGroup(items: 2, groupHeight: groupHeight),
+            HorizontalLayoutGroup(items: 1, groupHeight: groupHeight)
         ]
         super.init(layoutGroups: layoutGroups)
     }

@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -92,11 +93,11 @@
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2s1-bC-RKs">
                                                             <rect key="frame" x="93.5" y="64" width="8" height="21"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <nil key="textColor"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
                                                         <constraint firstItem="2s1-bC-RKs" firstAttribute="centerX" secondItem="6Xs-TF-Fq4" secondAttribute="centerX" id="26F-by-8In"/>
                                                         <constraint firstItem="2s1-bC-RKs" firstAttribute="centerY" secondItem="6Xs-TF-Fq4" secondAttribute="centerY" id="rRu-E4-rwK"/>
@@ -114,6 +115,37 @@
                                         <connections>
                                             <outlet property="mainView" destination="6Xs-TF-Fq4" id="Sqn-zt-NX8"/>
                                             <outlet property="titleLabel" destination="2s1-bC-RKs" id="kgs-vL-54z"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                    <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="roundedCell" id="wE0-YN-ZK0" customClass="StreamCollectionViewCell" customModule="AACustomCollectionViewLayouts" customModuleProvider="target">
+                                        <rect key="frame" x="90" y="158" width="195" height="148"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="195" height="148"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TPZ-BZ-tgc">
+                                                    <rect key="frame" x="52" y="29" width="90" height="90"/>
+                                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="90" id="K3h-gP-v0j"/>
+                                                        <constraint firstAttribute="width" secondItem="TPZ-BZ-tgc" secondAttribute="height" multiplier="1:1" id="hIO-zR-bV9"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="45"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                        </view>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="TPZ-BZ-tgc" firstAttribute="centerY" secondItem="wE0-YN-ZK0" secondAttribute="centerY" id="9ya-Ow-6yC"/>
+                                            <constraint firstItem="TPZ-BZ-tgc" firstAttribute="centerX" secondItem="wE0-YN-ZK0" secondAttribute="centerX" id="H0E-au-yAw"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="mainView" destination="TPZ-BZ-tgc" id="0LZ-Ad-Exd"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>

@@ -22,7 +22,6 @@ class AACustomLayout: UICollectionViewLayout {
     private var currentLayoutGroup: LayoutGroup
     
     fileprivate var cache = [UICollectionViewLayoutAttributes]()
-    
     fileprivate var contentHeight:CGFloat  = 0.0
     fileprivate var contentWidth: CGFloat {
         let insets = collectionView!.contentInset

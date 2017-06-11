@@ -16,7 +16,7 @@ class StreamViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        dataSource = Array(1...30).map {_ in ""}
+        dataSource = Array(1...32).map {"\($0)"}
         collectionView.reloadData()
         collectionView.collectionViewLayout = currentLayout
     }
@@ -29,9 +29,10 @@ extension StreamViewController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "StreamCollectionViewCell", for: indexPath) as! StreamCollectionViewCell
+        let reuseIdentifier =  currentLayout is BadooLayout || currentLayout is CircularLayout ? "roundedCell" : "StreamCollectionViewCell"
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! StreamCollectionViewCell
         cell.mainView.backgroundColor = UIColor.randomColor
-        cell.titleLabel.text = "\(indexPath.item)"
+        cell.titleLabel?.text = dataSource[indexPath.item]
         return cell
     }
 }
