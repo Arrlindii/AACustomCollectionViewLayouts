@@ -118,34 +118,44 @@
                                         </connections>
                                     </collectionViewCell>
                                     <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="roundedCell" id="wE0-YN-ZK0" customClass="StreamCollectionViewCell" customModule="AACustomCollectionViewLayouts" customModuleProvider="target">
-                                        <rect key="frame" x="90" y="158" width="195" height="148"/>
+                                        <rect key="frame" x="75.5" y="158" width="224" height="199"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="195" height="148"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="224" height="199"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TPZ-BZ-tgc">
-                                                    <rect key="frame" x="52" y="29" width="90" height="90"/>
+                                                    <rect key="frame" x="57" y="44.5" width="110" height="110"/>
                                                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="90" id="K3h-gP-v0j"/>
+                                                        <constraint firstAttribute="width" constant="110" id="K3h-gP-v0j"/>
                                                         <constraint firstAttribute="width" secondItem="TPZ-BZ-tgc" secondAttribute="height" multiplier="1:1" id="hIO-zR-bV9"/>
                                                     </constraints>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                            <integer key="value" value="45"/>
+                                                            <integer key="value" value="55"/>
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qt5-1V-g5q">
+                                                    <rect key="frame" x="91" y="164.5" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                         </view>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
+                                            <constraint firstItem="qt5-1V-g5q" firstAttribute="centerX" secondItem="TPZ-BZ-tgc" secondAttribute="centerX" id="5GE-KY-NqP"/>
                                             <constraint firstItem="TPZ-BZ-tgc" firstAttribute="centerY" secondItem="wE0-YN-ZK0" secondAttribute="centerY" id="9ya-Ow-6yC"/>
+                                            <constraint firstItem="qt5-1V-g5q" firstAttribute="top" secondItem="TPZ-BZ-tgc" secondAttribute="bottom" constant="10" id="FOa-4A-KFU"/>
                                             <constraint firstItem="TPZ-BZ-tgc" firstAttribute="centerX" secondItem="wE0-YN-ZK0" secondAttribute="centerX" id="H0E-au-yAw"/>
                                         </constraints>
+                                        <size key="customSize" width="224" height="199"/>
                                         <connections>
                                             <outlet property="mainView" destination="TPZ-BZ-tgc" id="0LZ-Ad-Exd"/>
+                                            <outlet property="titleLabel" destination="qt5-1V-g5q" id="eIr-Q8-1Iv"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
