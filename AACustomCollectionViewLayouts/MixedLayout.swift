@@ -20,10 +20,7 @@ class MixedLayot: AACustomLayout {
             SnapGroupLayout(direction: .left, groupHeight: snapCustomGroupHeight),
             SnapGroupLayout(direction: .right, groupHeight: snapCustomGroupHeight),
             HorizontalLayoutGroup(items: 3, groupHeight: horizontalGroupHeight)
-        //            ,CircularLayoutGroup(items: 6, groupHeight: 200, itemWidth: 40.0, itemHeight: 40.0)
         ]
-
-
         super.init(layoutGroups: layoutGroups)
     }
     

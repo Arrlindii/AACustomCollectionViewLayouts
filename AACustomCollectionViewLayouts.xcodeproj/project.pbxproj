@@ -82,17 +82,12 @@
 		DC7E87D51EEC2B8400D47062 /* AACustomCollectionViewLayouts */ = {
 			isa = PBXGroup;
 			children = (
-				DC7E87F81EEC2F3300D47062 /* CustomLayouts */,
 				DC7E87ED1EEC2D9D00D47062 /* LayoutGroups */,
-				DC7E87D61EEC2B8400D47062 /* AppDelegate.swift */,
-				DC7E87D81EEC2B8400D47062 /* StreamViewController.swift */,
-				DC7E87DA1EEC2B8400D47062 /* Main.storyboard */,
-				DC7E87DD1EEC2B8400D47062 /* Assets.xcassets */,
-				DC7E87DF1EEC2B8400D47062 /* LaunchScreen.storyboard */,
-				DC7E87E21EEC2B8400D47062 /* Info.plist */,
-				DC7E87E81EEC2C6500D47062 /* StreamCollectionViewCell.swift */,
-				DC7E87EA1EEC2CA500D47062 /* Extensions.swift */,
-				DC9363351EEC7FF400594626 /* IntroViewController.swift */,
+				DCAE7A3B1EEDDF2B002BBEF2 /* Cells */,
+				DCAE7A3A1EEDDF19002BBEF2 /* Storyboards */,
+				DCAE7A391EEDDEFE002BBEF2 /* ViewControllers */,
+				DC7E87F81EEC2F3300D47062 /* CustomLayouts */,
+				DCAE7A3C1EEDDF33002BBEF2 /* Other */,
 			);
 			path = AACustomCollectionViewLayouts;
 			sourceTree = "<group>";
@@ -120,6 +115,43 @@
 				DC9363391EEC82BF00594626 /* CircularLayout.swift */,
 			);
 			name = CustomLayouts;
+			sourceTree = "<group>";
+		};
+		DCAE7A391EEDDEFE002BBEF2 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				DC7E87D81EEC2B8400D47062 /* StreamViewController.swift */,
+				DC9363351EEC7FF400594626 /* IntroViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		DCAE7A3A1EEDDF19002BBEF2 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				DC7E87DF1EEC2B8400D47062 /* LaunchScreen.storyboard */,
+				DC7E87DA1EEC2B8400D47062 /* Main.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		DCAE7A3B1EEDDF2B002BBEF2 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DC7E87E81EEC2C6500D47062 /* StreamCollectionViewCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		DCAE7A3C1EEDDF33002BBEF2 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				DC7E87EA1EEC2CA500D47062 /* Extensions.swift */,
+				DC7E87E21EEC2B8400D47062 /* Info.plist */,
+				DC7E87DD1EEC2B8400D47062 /* Assets.xcassets */,
+				DC7E87D61EEC2B8400D47062 /* AppDelegate.swift */,
+			);
+			name = Other;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -341,6 +373,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.arlind.AACustomCollectionViewLayouts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -354,6 +387,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.arlind.AACustomCollectionViewLayouts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

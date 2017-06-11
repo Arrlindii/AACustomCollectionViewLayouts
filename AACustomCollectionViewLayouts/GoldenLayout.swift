@@ -9,9 +9,9 @@
 import UIKit
 
 class GoldenLayout: AACustomLayout {
-    init() {
+    init(items: Int = 5, groupHeight: CGFloat = 350.0) {
         let layoutGroups: [LayoutGroup] = [
-            GoldenRatioLayoutGroup(items: 5, groupHeight: 350.0)
+            GoldenRatioLayoutGroup(items: items, groupHeight: groupHeight)
         ]
         super.init(layoutGroups: layoutGroups)
     }

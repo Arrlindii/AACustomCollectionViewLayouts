@@ -11,6 +11,7 @@ import UIKit
 class AACustomLayout: UICollectionViewLayout {
 
     var layoutGroups: [LayoutGroup]
+    private var lastNumberOfItems = 0
     private var currentLayoutGroupIndex = -1
     private var counter  = 0
     private var yOffset: CGFloat = 0
@@ -20,6 +21,7 @@ class AACustomLayout: UICollectionViewLayout {
         return collectionView!.frame.width
     }
     private var currentLayoutGroup: LayoutGroup
+    private var boundsGotChanged = false
     
     fileprivate var cache = [UICollectionViewLayoutAttributes]()
     fileprivate var contentHeight:CGFloat  = 0.0
@@ -39,16 +41,27 @@ class AACustomLayout: UICollectionViewLayout {
     }
     
     override func prepare() {
-        if cache.isEmpty {
-            var column = 0
-            for item in 0 ..< collectionView!.numberOfItems(inSection: 0) {
-                if column == 0 {
-                    currentLayoutGroup = nextLayoutGroup()
-                    let blockFrame = CGRect(origin: CGPoint(x: 0, y:yOffset), size: CGSize(width: baseWidth, height: currentLayoutGroup.groupHeight))
-                    prepareLayoutAttributtes(usingGroup: currentLayoutGroup, startingIndex: item, rect: blockFrame)
-                }
-                column = (column + 1) % currentLayoutGroup.numberOfItems
+        resetCacheIfNeeded()
+        guard cache.isEmpty else {return}
+        var column = 0
+        for item in 0 ..< collectionView!.numberOfItems(inSection: 0) {
+            if column == 0 {
+                currentLayoutGroup = nextLayoutGroup()
+                let blockFrame = CGRect(origin: CGPoint(x: 0, y:yOffset), size: CGSize(width: baseWidth, height: currentLayoutGroup.groupHeight))
+                prepareLayoutAttributtes(usingGroup: currentLayoutGroup, startingIndex: item, rect: blockFrame)
             }
+            column = (column + 1) % currentLayoutGroup.numberOfItems
+        }
+    }
+    
+    private func resetCacheIfNeeded() {
+        if lastNumberOfItems != collectionView!.numberOfItems(inSection: 0) || boundsGotChanged {
+            cache.removeAll()
+            lastNumberOfItems = collectionView!.numberOfItems(inSection: 0)
+            boundsGotChanged = false
+            contentHeight = 0
+            yOffset = 0
+            currentLayoutGroupIndex = -1
         }
     }
     
@@ -81,6 +94,11 @@ class AACustomLayout: UICollectionViewLayout {
     
     override func layoutAttributesForItem(at indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
         return cache.filter { $0.indexPath == indexPath }.first
+    }
+    
+    override func shouldInvalidateLayout(forBoundsChange newBounds: CGRect) -> Bool {
+        boundsGotChanged = collectionView!.bounds != newBounds
+        return boundsGotChanged
     }
     
     override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {

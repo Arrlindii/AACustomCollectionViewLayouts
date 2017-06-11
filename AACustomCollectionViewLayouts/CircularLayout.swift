@@ -6,13 +6,12 @@
 //  Copyright © 2017 Arlind. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class CircularLayout: AACustomLayout {
-    
-    init() {
+    init(itemWidth: CGFloat = 95.0, itemHeight: CGFloat = 95.0, groupHeight: CGFloat = 450, numberOfItemsInGroup items: Int = 7) {
         let layoutGroups: [LayoutGroup] = [
-            CircularLayoutGroup(items: 7, groupHeight: 450.0, itemWidth: 95.0, itemHeight: 95.0)
+            CircularLayoutGroup(items: items, groupHeight: groupHeight, itemWidth: itemWidth, itemHeight: itemHeight)
         ]
         super.init(layoutGroups: layoutGroups)
     }

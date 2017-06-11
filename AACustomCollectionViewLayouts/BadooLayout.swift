@@ -9,10 +9,7 @@
 import UIKit
 
 class BadooLayout: AACustomLayout {
-    
-    var groupHeight: CGFloat = 60.0
-    
-    init() {
+    init(groupHeight: CGFloat = 60.0) {
         let layoutGroups: [LayoutGroup] = [
             HorizontalLayoutGroup(items: 2, groupHeight: groupHeight),
             HorizontalLayoutGroup(items: 1, groupHeight: groupHeight)
