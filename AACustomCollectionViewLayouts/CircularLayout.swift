@@ -12,7 +12,7 @@ class CircularLayout: AACustomLayout {
     
     init() {
         let layoutGroups: [LayoutGroup] = [
-            CircularLayoutGroup(items: 8, groupHeight: 400.0, itemWidth: 95.0, itemHeight: 95.0)
+            CircularLayoutGroup(items: 7, groupHeight: 450.0, itemWidth: 95.0, itemHeight: 95.0)
         ]
         super.init(layoutGroups: layoutGroups)
     }

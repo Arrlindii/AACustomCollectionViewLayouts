@@ -14,10 +14,16 @@ class MixedLayot: AACustomLayout {
     
     init() {
         let layoutGroups: [LayoutGroup] = [
-            HorizontalLayoutGroup(items: 2, groupHeight: horizontalGroupHeight)
-            ,CircularLayoutGroup(items: 6, groupHeight: 200, itemWidth: 40.0, itemHeight: 40.0)
-            ,HorizontalLayoutGroup(items: 5, groupHeight: horizontalGroupHeight)
+            HorizontalLayoutGroup(items: 2, groupHeight: horizontalGroupHeight),
+            GoldenRatioLayoutGroup(items: 5, groupHeight: snapCustomGroupHeight),
+            HorizontalLayoutGroup(items: 6, groupHeight: horizontalGroupHeight),
+            SnapGroupLayout(direction: .left, groupHeight: snapCustomGroupHeight),
+            SnapGroupLayout(direction: .right, groupHeight: snapCustomGroupHeight),
+            HorizontalLayoutGroup(items: 3, groupHeight: horizontalGroupHeight)
+        //            ,CircularLayoutGroup(items: 6, groupHeight: 200, itemWidth: 40.0, itemHeight: 40.0)
         ]
+
+
         super.init(layoutGroups: layoutGroups)
     }
     
