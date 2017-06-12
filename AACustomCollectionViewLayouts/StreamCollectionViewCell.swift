@@ -13,5 +13,10 @@ class StreamCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var imageView: UIImageView?
     @IBOutlet weak var titleLabel: UILabel?
     @IBOutlet weak var mainView: UIView!
+    
+    func makeRounded() {
+        mainView.layer.cornerRadius = mainView.bounds.size.width / 2
+        mainView.clipsToBounds = true
+    }
 
 }

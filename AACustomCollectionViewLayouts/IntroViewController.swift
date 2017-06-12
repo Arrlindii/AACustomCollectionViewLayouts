@@ -30,7 +30,7 @@ class IntroViewController: UIViewController {
             TableDataModel(name: "SnapDiscoveryLayout", layout: SnapDiscoveryLayout()),
             TableDataModel(name: "CircularLayout", layout: CircularLayout()),
             TableDataModel(name: "GoldenLayout", layout: GoldenLayout()),
-            TableDataModel(name: "BadooLayout", layout: BadooLayout()),
+            TableDataModel(name: "BadooLayout", layout: BadooLayout(pictureHeight: view.frame.width * 0.3)),
             TableDataModel(name: "MixedLayot", layout: MixedLayot())
         ]
     }
