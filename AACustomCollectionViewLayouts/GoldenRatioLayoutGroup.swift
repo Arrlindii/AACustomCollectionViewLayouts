@@ -9,8 +9,10 @@
 import UIKit
 
 class GoldenRatioLayoutGroup: LayoutGroup {
+
     var numberOfItems: Int
     var groupHeight: CGFloat
+    var nextGroupStartY: CGFloat?
     private var iteration: Int
     
     func layoutFramesForItemsInRect(_ rect: CGRect) -> [CGRect] {

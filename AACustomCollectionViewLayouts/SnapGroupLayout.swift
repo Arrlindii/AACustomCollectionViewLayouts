@@ -17,6 +17,7 @@ struct SnapGroupLayout: LayoutGroup {
     var numberOfItems: Int
     var direction: SnapGroupedDirection
     var groupHeight: CGFloat
+    var nextGroupStartY: CGFloat?
     
     func layoutFramesForItemsInRect(_ rect: CGRect) -> [CGRect] {
         return direction == .right  ? layoutFramesForItemsInRectFromRight(rect) : layoutFramesForItemsInRectFromLeft(rect)

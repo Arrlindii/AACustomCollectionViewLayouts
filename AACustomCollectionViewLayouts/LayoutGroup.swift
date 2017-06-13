@@ -11,7 +11,7 @@ import UIKit
 protocol LayoutGroup {
     var numberOfItems: Int {get}
     var groupHeight: CGFloat {get}
+    var nextGroupStartY: CGFloat? {get}
     
-    func layoutFramesForItemsInRect(_ rect: CGRect) -> [CGRect] 
+    func layoutFramesForItemsInRect(_ rect: CGRect) -> [CGRect]
 }
-

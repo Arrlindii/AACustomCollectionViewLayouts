@@ -9,10 +9,12 @@
 import UIKit
 
 struct CircularLayoutGroup: LayoutGroup {
+    
     var numberOfItems: Int
     var groupHeight: CGFloat
     var itemWidth: CGFloat
     var itemHeight: CGFloat
+    var nextGroupStartY: CGFloat?
     
     init(items: Int, groupHeight: CGFloat, itemWidth: CGFloat, itemHeight: CGFloat) {
         numberOfItems = items

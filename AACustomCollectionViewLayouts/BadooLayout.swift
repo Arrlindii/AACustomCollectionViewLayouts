@@ -28,13 +28,14 @@ fileprivate class BadooGroup: LayoutGroup {
     var groupHeight: CGFloat
     var itemWidth: CGFloat
     var padding: CGFloat = 15.0
+    var nextGroupStartY: CGFloat?
     
     func layoutFramesForItemsInRect(_ rect: CGRect) -> [CGRect] {
-        let y: CGFloat =  rect.origin.y + groupHeight*0.5
-        return [
+        nextGroupStartY =  rect.origin.y + groupHeight
+         return [
             CGRect(x: rect.origin.x + padding, y: rect.origin.y, width: itemWidth, height: groupHeight),
             CGRect(x: rect.width - itemWidth - padding, y: rect.origin.y, width: itemWidth, height: groupHeight),
-            CGRect(x: (rect.width - itemWidth) / 2, y: y, width: itemWidth, height: groupHeight)
+            CGRect(x: (rect.width - itemWidth) / 2, y: rect.origin.y + groupHeight*0.5, width: itemWidth, height: groupHeight)
         ]
     }
     

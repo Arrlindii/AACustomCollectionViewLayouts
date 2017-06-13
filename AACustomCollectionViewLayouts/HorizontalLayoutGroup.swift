@@ -9,8 +9,10 @@
 import UIKit
 
 struct HorizontalLayoutGroup: LayoutGroup {
+
     var numberOfItems: Int
     var groupHeight: CGFloat
+    var nextGroupStartY: CGFloat?
     
     func layoutFramesForItemsInRect(_ rect: CGRect) -> [CGRect] {
         guard numberOfItems > 0 else {return [CGRect]()}
