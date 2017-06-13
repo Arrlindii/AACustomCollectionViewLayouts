@@ -32,7 +32,6 @@ extension StreamViewController: UICollectionViewDataSource {
         let reuseIdentifier =  currentLayout is BadooLayout || currentLayout is CircularLayout ? "roundedCell" : "StreamCollectionViewCell"
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! StreamCollectionViewCell
         cell.mainView.backgroundColor = UIColor.randomColor
-        cell.backgroundColor = UIColor.randomColor
         cell.titleLabel?.text = dataSource[indexPath.item]
         cell.imageView?.image = UIImage(named:  dataSource[indexPath.item])
         cell.makeRounded()

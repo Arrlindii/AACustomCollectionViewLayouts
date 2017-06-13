@@ -72,7 +72,7 @@ class AACustomLayout: UICollectionViewLayout {
     
     private func prepareLayoutAttributtes(usingGroup group: LayoutGroup,  startingIndex item: Int, rect: CGRect)  {
         let frames = group.layoutFramesForItemsInRect(rect)
-        yOffset = frames.sorted(by: { $0.maxY >= $1.maxY }).first!.maxY
+        yOffset = frames.sorted(by: { $0.maxY >= $1.maxY }).last!.maxY
         contentHeight = max(contentHeight, yOffset)
         
         for i in 0...frames.count - 1 {

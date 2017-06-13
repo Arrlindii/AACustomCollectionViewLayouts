@@ -13,11 +13,7 @@ class BadooLayout: AACustomLayout {
     init(pictureHeight: CGFloat, extraHeight: CGFloat = 30.0) {
         let groupHeight: CGFloat = pictureHeight + extraHeight
         let layoutGroups: [LayoutGroup] = [
-            CustomLayout(groupHeight: groupHeight, itemWidth: pictureHeight),
-            CustomLayout2(groupHeight: groupHeight, itemWidth: pictureHeight)
-            
-            
-//            HorizontalLayoutGroup(items: 1, groupHeight: groupHeight) // / 3)
+            BadooGroup(groupHeight: groupHeight, itemWidth: pictureHeight)
         ]
         super.init(layoutGroups: layoutGroups)
     }
@@ -27,16 +23,18 @@ class BadooLayout: AACustomLayout {
     }
 }
 
-fileprivate class CustomLayout: LayoutGroup {
-    var numberOfItems: Int = 2
+fileprivate class BadooGroup: LayoutGroup {
+    var numberOfItems: Int = 3
     var groupHeight: CGFloat
     var itemWidth: CGFloat
     var padding: CGFloat = 15.0
     
     func layoutFramesForItemsInRect(_ rect: CGRect) -> [CGRect] {
+        let y: CGFloat =  rect.origin.y + groupHeight*0.5
         return [
-            CGRect(x: rect.origin.x + padding, y: rect.origin.y + padding, width: itemWidth, height: groupHeight),
-            CGRect(x: rect.width - itemWidth - padding, y: rect.origin.y + padding, width: itemWidth, height: groupHeight)
+            CGRect(x: rect.origin.x + padding, y: rect.origin.y, width: itemWidth, height: groupHeight),
+            CGRect(x: rect.width - itemWidth - padding, y: rect.origin.y, width: itemWidth, height: groupHeight),
+            CGRect(x: (rect.width - itemWidth) / 2, y: y, width: itemWidth, height: groupHeight)
         ]
     }
     
@@ -46,20 +44,3 @@ fileprivate class CustomLayout: LayoutGroup {
     }
 }
 
-fileprivate class CustomLayout2: LayoutGroup {
-    var numberOfItems: Int = 1
-    var groupHeight: CGFloat
-    var itemWidth: CGFloat
-    var padding: CGFloat = 15.0
-    
-    func layoutFramesForItemsInRect(_ rect: CGRect) -> [CGRect] {
-        return [
-            CGRect(x: (rect.width - itemWidth) / 2, y: rect.origin.y + padding - groupHeight * 0.7  , width: itemWidth, height: groupHeight)
-        ]
-    }
-    
-    init(groupHeight: CGFloat, itemWidth: CGFloat) {
-        self.groupHeight = groupHeight
-        self.itemWidth = itemWidth
-    }
-}
