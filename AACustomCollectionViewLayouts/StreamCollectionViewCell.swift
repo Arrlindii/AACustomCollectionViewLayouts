@@ -14,15 +14,11 @@ class StreamCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var titleLabel: UILabel?
     @IBOutlet weak var mainView: UIView!
     
-    override func layoutSubviews() {
-        super.layoutSubviews()
-        mainView.layer.cornerRadius = mainView.bounds.size.width / 2
-        mainView.clipsToBounds = true
+    override func apply(_ layoutAttributes: UICollectionViewLayoutAttributes) {
+        super.apply(layoutAttributes)
+        mainView.layer.cornerRadius = layoutAttributes.frame.width / 2
     }
     
     func makeRounded() {
-        mainView.layer.cornerRadius = mainView.bounds.size.width / 2
-        mainView.clipsToBounds = true
     }
-
 }
