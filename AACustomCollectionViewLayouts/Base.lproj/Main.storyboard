@@ -134,15 +134,24 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TPZ-BZ-tgc">
-                                                    <rect key="frame" x="18.5" y="0.0" width="144.5" height="144.5"/>
+                                                    <rect key="frame" x="17.5" y="0.0" width="147.5" height="147.5"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1pZ-oA-KCj">
+                                                            <rect key="frame" x="0.0" y="0.0" width="147.5" height="147.5"/>
+                                                        </imageView>
+                                                    </subviews>
                                                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
+                                                        <constraint firstAttribute="bottom" secondItem="1pZ-oA-KCj" secondAttribute="bottom" id="DxD-y6-zLQ"/>
+                                                        <constraint firstItem="1pZ-oA-KCj" firstAttribute="leading" secondItem="TPZ-BZ-tgc" secondAttribute="leading" id="c5q-3C-YAY"/>
+                                                        <constraint firstAttribute="trailing" secondItem="1pZ-oA-KCj" secondAttribute="trailing" id="pm3-2h-ACb"/>
                                                         <constraint firstAttribute="width" secondItem="TPZ-BZ-tgc" secondAttribute="height" id="qby-pF-ia9"/>
+                                                        <constraint firstItem="1pZ-oA-KCj" firstAttribute="top" secondItem="TPZ-BZ-tgc" secondAttribute="top" id="ue5-g2-4gx"/>
                                                     </constraints>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qt5-1V-g5q">
-                                                    <rect key="frame" x="69.5" y="154.5" width="42" height="20.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <rect key="frame" x="73" y="157.5" width="37" height="17.5"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -158,6 +167,7 @@
                                         </constraints>
                                         <size key="customSize" width="181" height="175"/>
                                         <connections>
+                                            <outlet property="imageView" destination="1pZ-oA-KCj" id="u1e-to-1Wd"/>
                                             <outlet property="mainView" destination="TPZ-BZ-tgc" id="0LZ-Ad-Exd"/>
                                             <outlet property="titleLabel" destination="qt5-1V-g5q" id="eIr-Q8-1Iv"/>
                                         </connections>

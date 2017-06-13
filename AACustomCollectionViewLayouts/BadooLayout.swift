@@ -31,11 +31,11 @@ fileprivate class BadooGroup: LayoutGroup {
     var nextGroupStartY: CGFloat?
     
     func layoutFramesForItemsInRect(_ rect: CGRect) -> [CGRect] {
-        nextGroupStartY =  rect.origin.y + groupHeight
+        nextGroupStartY =  rect.origin.y + groupHeight + padding
          return [
-            CGRect(x: rect.origin.x + padding, y: rect.origin.y, width: itemWidth, height: groupHeight),
-            CGRect(x: rect.width - itemWidth - padding, y: rect.origin.y, width: itemWidth, height: groupHeight),
-            CGRect(x: (rect.width - itemWidth) / 2, y: rect.origin.y + groupHeight*0.5, width: itemWidth, height: groupHeight)
+            CGRect(x: rect.origin.x + padding, y: rect.origin.y + padding, width: itemWidth, height: groupHeight),
+            CGRect(x: rect.width - itemWidth - padding, y: rect.origin.y + padding, width: itemWidth, height: groupHeight),
+            CGRect(x: (rect.width - itemWidth) / 2, y: rect.origin.y + groupHeight*0.5 + padding, width: itemWidth, height: groupHeight)
         ]
     }
     
