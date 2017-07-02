@@ -1,9 +1,10 @@
 Pod::Spec.new do |s|
   s.name             = 'AACustomCollectionViewLayouts'
-  s.version          = '0.1.0'
+  s.version          = '0.2.0'
   s.summary          = 'Custom CollectionView Layouts'
  
-  s.description      = <<-DESC Custom CollectionView Layouts
+  s.description      = <<-DESC 
+                          Cool Custom CollectionView Layouts For iOS
                        DESC
  
   s.homepage         = 'https://github.com/Arrlindii/AACustomCollectionViewLayouts/'
@@ -12,8 +13,8 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/Arrlindii/AACustomCollectionViewLayouts.git', :tag => s.version.to_s }
  
   s.ios.deployment_target = '8.0'
-  s.source_files = 'AACustomCollectionViewLayouts/AACustomCollectionViewLayouts/CustomLayouts/*.swift, 
-                    AACustomCollectionViewLayouts/AACustomCollectionViewLayouts/LayoutGroups/*.swift,
-                     AACustomCollectionViewLayouts/AACustomCollectionViewLayouts/AACustomLayout+Extensions.swift'
+  s.source_files = 'AACustomCollectionViewLayouts/CustomLayouts/*.swift',
+                    'AACustomCollectionViewLayouts/LayoutGroups/*.swift',
+                     'AACustomCollectionViewLayouts/AACustomLayout+Extensions.swift'
  
 end
