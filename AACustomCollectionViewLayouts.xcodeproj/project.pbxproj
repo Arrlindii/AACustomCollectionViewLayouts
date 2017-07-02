@@ -14,18 +14,18 @@
 		DC7E87E11EEC2B8400D47062 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC7E87DF1EEC2B8400D47062 /* LaunchScreen.storyboard */; };
 		DC7E87E91EEC2C6500D47062 /* StreamCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7E87E81EEC2C6500D47062 /* StreamCollectionViewCell.swift */; };
 		DC7E87EB1EEC2CA500D47062 /* AACustomLayout+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7E87EA1EEC2CA500D47062 /* AACustomLayout+Extensions.swift */; };
-		DC7E87EF1EEC2DC000D47062 /* HorizontalLayoutGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7E87EE1EEC2DC000D47062 /* HorizontalLayoutGroup.swift */; };
-		DC7E87F11EEC2DD000D47062 /* LayoutGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7E87F01EEC2DD000D47062 /* LayoutGroup.swift */; };
-		DC7E87F31EEC2E1200D47062 /* SnapGroupLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7E87F21EEC2E1200D47062 /* SnapGroupLayout.swift */; };
-		DC7E87F51EEC2E5B00D47062 /* GoldenRatioLayoutGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7E87F41EEC2E5B00D47062 /* GoldenRatioLayoutGroup.swift */; };
-		DC7E87F71EEC2E7300D47062 /* CircularLayoutGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7E87F61EEC2E7300D47062 /* CircularLayoutGroup.swift */; };
-		DC7E87FA1EEC2F7000D47062 /* AACustomLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7E87F91EEC2F7000D47062 /* AACustomLayout.swift */; };
-		DC7E87FC1EEC331300D47062 /* SnapDiscoveryLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7E87FB1EEC331300D47062 /* SnapDiscoveryLayout.swift */; };
-		DC7E87FE1EEC34DC00D47062 /* BadooLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7E87FD1EEC34DC00D47062 /* BadooLayout.swift */; };
-		DC9363341EEC6CD400594626 /* MixedLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9363331EEC6CD400594626 /* MixedLayout.swift */; };
 		DC9363361EEC7FF400594626 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9363351EEC7FF400594626 /* IntroViewController.swift */; };
-		DC9363381EEC821400594626 /* GoldenLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9363371EEC821400594626 /* GoldenLayout.swift */; };
-		DC93633A1EEC82BF00594626 /* CircularLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9363391EEC82BF00594626 /* CircularLayout.swift */; };
+		DCEE14FF1F097E2E004E8D0B /* CircularLayoutGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEE14FA1F097E2E004E8D0B /* CircularLayoutGroup.swift */; };
+		DCEE15001F097E2E004E8D0B /* GoldenRatioLayoutGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEE14FB1F097E2E004E8D0B /* GoldenRatioLayoutGroup.swift */; };
+		DCEE15011F097E2E004E8D0B /* HorizontalLayoutGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEE14FC1F097E2E004E8D0B /* HorizontalLayoutGroup.swift */; };
+		DCEE15021F097E2E004E8D0B /* LayoutGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEE14FD1F097E2E004E8D0B /* LayoutGroup.swift */; };
+		DCEE15031F097E2E004E8D0B /* SnapGroupLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEE14FE1F097E2E004E8D0B /* SnapGroupLayout.swift */; };
+		DCEE150A1F097E68004E8D0B /* AACustomLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEE15041F097E68004E8D0B /* AACustomLayout.swift */; };
+		DCEE150B1F097E68004E8D0B /* BadooLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEE15051F097E68004E8D0B /* BadooLayout.swift */; };
+		DCEE150C1F097E68004E8D0B /* CircularLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEE15061F097E68004E8D0B /* CircularLayout.swift */; };
+		DCEE150D1F097E68004E8D0B /* GoldenLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEE15071F097E68004E8D0B /* GoldenLayout.swift */; };
+		DCEE150E1F097E68004E8D0B /* MixedLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEE15081F097E68004E8D0B /* MixedLayout.swift */; };
+		DCEE150F1F097E68004E8D0B /* SnapDiscoveryLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEE15091F097E68004E8D0B /* SnapDiscoveryLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,18 +38,18 @@
 		DC7E87E21EEC2B8400D47062 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC7E87E81EEC2C6500D47062 /* StreamCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamCollectionViewCell.swift; sourceTree = "<group>"; };
 		DC7E87EA1EEC2CA500D47062 /* AACustomLayout+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AACustomLayout+Extensions.swift"; sourceTree = "<group>"; };
-		DC7E87EE1EEC2DC000D47062 /* HorizontalLayoutGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalLayoutGroup.swift; sourceTree = "<group>"; };
-		DC7E87F01EEC2DD000D47062 /* LayoutGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutGroup.swift; sourceTree = "<group>"; };
-		DC7E87F21EEC2E1200D47062 /* SnapGroupLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapGroupLayout.swift; sourceTree = "<group>"; };
-		DC7E87F41EEC2E5B00D47062 /* GoldenRatioLayoutGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoldenRatioLayoutGroup.swift; sourceTree = "<group>"; };
-		DC7E87F61EEC2E7300D47062 /* CircularLayoutGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularLayoutGroup.swift; sourceTree = "<group>"; };
-		DC7E87F91EEC2F7000D47062 /* AACustomLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AACustomLayout.swift; sourceTree = "<group>"; };
-		DC7E87FB1EEC331300D47062 /* SnapDiscoveryLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapDiscoveryLayout.swift; sourceTree = "<group>"; };
-		DC7E87FD1EEC34DC00D47062 /* BadooLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BadooLayout.swift; sourceTree = "<group>"; };
-		DC9363331EEC6CD400594626 /* MixedLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MixedLayout.swift; sourceTree = "<group>"; };
 		DC9363351EEC7FF400594626 /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
-		DC9363371EEC821400594626 /* GoldenLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoldenLayout.swift; sourceTree = "<group>"; };
-		DC9363391EEC82BF00594626 /* CircularLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularLayout.swift; sourceTree = "<group>"; };
+		DCEE14FA1F097E2E004E8D0B /* CircularLayoutGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CircularLayoutGroup.swift; path = LayoutGroups/CircularLayoutGroup.swift; sourceTree = "<group>"; };
+		DCEE14FB1F097E2E004E8D0B /* GoldenRatioLayoutGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GoldenRatioLayoutGroup.swift; path = LayoutGroups/GoldenRatioLayoutGroup.swift; sourceTree = "<group>"; };
+		DCEE14FC1F097E2E004E8D0B /* HorizontalLayoutGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HorizontalLayoutGroup.swift; path = LayoutGroups/HorizontalLayoutGroup.swift; sourceTree = "<group>"; };
+		DCEE14FD1F097E2E004E8D0B /* LayoutGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LayoutGroup.swift; path = LayoutGroups/LayoutGroup.swift; sourceTree = "<group>"; };
+		DCEE14FE1F097E2E004E8D0B /* SnapGroupLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapGroupLayout.swift; path = LayoutGroups/SnapGroupLayout.swift; sourceTree = "<group>"; };
+		DCEE15041F097E68004E8D0B /* AACustomLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AACustomLayout.swift; path = CustomLayouts/AACustomLayout.swift; sourceTree = "<group>"; };
+		DCEE15051F097E68004E8D0B /* BadooLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BadooLayout.swift; path = CustomLayouts/BadooLayout.swift; sourceTree = "<group>"; };
+		DCEE15061F097E68004E8D0B /* CircularLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CircularLayout.swift; path = CustomLayouts/CircularLayout.swift; sourceTree = "<group>"; };
+		DCEE15071F097E68004E8D0B /* GoldenLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GoldenLayout.swift; path = CustomLayouts/GoldenLayout.swift; sourceTree = "<group>"; };
+		DCEE15081F097E68004E8D0B /* MixedLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MixedLayout.swift; path = CustomLayouts/MixedLayout.swift; sourceTree = "<group>"; };
+		DCEE15091F097E68004E8D0B /* SnapDiscoveryLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapDiscoveryLayout.swift; path = CustomLayouts/SnapDiscoveryLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,11 +95,11 @@
 		DC7E87ED1EEC2D9D00D47062 /* LayoutGroups */ = {
 			isa = PBXGroup;
 			children = (
-				DC7E87EE1EEC2DC000D47062 /* HorizontalLayoutGroup.swift */,
-				DC7E87F01EEC2DD000D47062 /* LayoutGroup.swift */,
-				DC7E87F21EEC2E1200D47062 /* SnapGroupLayout.swift */,
-				DC7E87F41EEC2E5B00D47062 /* GoldenRatioLayoutGroup.swift */,
-				DC7E87F61EEC2E7300D47062 /* CircularLayoutGroup.swift */,
+				DCEE14FA1F097E2E004E8D0B /* CircularLayoutGroup.swift */,
+				DCEE14FB1F097E2E004E8D0B /* GoldenRatioLayoutGroup.swift */,
+				DCEE14FC1F097E2E004E8D0B /* HorizontalLayoutGroup.swift */,
+				DCEE14FD1F097E2E004E8D0B /* LayoutGroup.swift */,
+				DCEE14FE1F097E2E004E8D0B /* SnapGroupLayout.swift */,
 			);
 			name = LayoutGroups;
 			sourceTree = "<group>";
@@ -107,12 +107,12 @@
 		DC7E87F81EEC2F3300D47062 /* CustomLayouts */ = {
 			isa = PBXGroup;
 			children = (
-				DC7E87F91EEC2F7000D47062 /* AACustomLayout.swift */,
-				DC7E87FB1EEC331300D47062 /* SnapDiscoveryLayout.swift */,
-				DC7E87FD1EEC34DC00D47062 /* BadooLayout.swift */,
-				DC9363331EEC6CD400594626 /* MixedLayout.swift */,
-				DC9363371EEC821400594626 /* GoldenLayout.swift */,
-				DC9363391EEC82BF00594626 /* CircularLayout.swift */,
+				DCEE15041F097E68004E8D0B /* AACustomLayout.swift */,
+				DCEE15051F097E68004E8D0B /* BadooLayout.swift */,
+				DCEE15061F097E68004E8D0B /* CircularLayout.swift */,
+				DCEE15071F097E68004E8D0B /* GoldenLayout.swift */,
+				DCEE15081F097E68004E8D0B /* MixedLayout.swift */,
+				DCEE15091F097E68004E8D0B /* SnapDiscoveryLayout.swift */,
 			);
 			name = CustomLayouts;
 			sourceTree = "<group>";
@@ -227,22 +227,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC7E87EF1EEC2DC000D47062 /* HorizontalLayoutGroup.swift in Sources */,
-				DC9363381EEC821400594626 /* GoldenLayout.swift in Sources */,
-				DC93633A1EEC82BF00594626 /* CircularLayout.swift in Sources */,
-				DC7E87F11EEC2DD000D47062 /* LayoutGroup.swift in Sources */,
-				DC7E87FA1EEC2F7000D47062 /* AACustomLayout.swift in Sources */,
-				DC7E87FC1EEC331300D47062 /* SnapDiscoveryLayout.swift in Sources */,
-				DC9363341EEC6CD400594626 /* MixedLayout.swift in Sources */,
-				DC7E87F51EEC2E5B00D47062 /* GoldenRatioLayoutGroup.swift in Sources */,
-				DC7E87F31EEC2E1200D47062 /* SnapGroupLayout.swift in Sources */,
+				DCEE15001F097E2E004E8D0B /* GoldenRatioLayoutGroup.swift in Sources */,
+				DCEE15031F097E2E004E8D0B /* SnapGroupLayout.swift in Sources */,
+				DCEE14FF1F097E2E004E8D0B /* CircularLayoutGroup.swift in Sources */,
+				DCEE15011F097E2E004E8D0B /* HorizontalLayoutGroup.swift in Sources */,
+				DCEE150D1F097E68004E8D0B /* GoldenLayout.swift in Sources */,
 				DC7E87D91EEC2B8400D47062 /* StreamViewController.swift in Sources */,
 				DC7E87E91EEC2C6500D47062 /* StreamCollectionViewCell.swift in Sources */,
 				DC9363361EEC7FF400594626 /* IntroViewController.swift in Sources */,
 				DC7E87D71EEC2B8400D47062 /* AppDelegate.swift in Sources */,
-				DC7E87F71EEC2E7300D47062 /* CircularLayoutGroup.swift in Sources */,
 				DC7E87EB1EEC2CA500D47062 /* AACustomLayout+Extensions.swift in Sources */,
-				DC7E87FE1EEC34DC00D47062 /* BadooLayout.swift in Sources */,
+				DCEE150A1F097E68004E8D0B /* AACustomLayout.swift in Sources */,
+				DCEE15021F097E2E004E8D0B /* LayoutGroup.swift in Sources */,
+				DCEE150F1F097E68004E8D0B /* SnapDiscoveryLayout.swift in Sources */,
+				DCEE150B1F097E68004E8D0B /* BadooLayout.swift in Sources */,
+				DCEE150E1F097E68004E8D0B /* MixedLayout.swift in Sources */,
+				DCEE150C1F097E68004E8D0B /* CircularLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
