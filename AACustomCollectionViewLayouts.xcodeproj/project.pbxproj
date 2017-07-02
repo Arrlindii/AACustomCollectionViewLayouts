@@ -13,7 +13,7 @@
 		DC7E87DE1EEC2B8400D47062 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC7E87DD1EEC2B8400D47062 /* Assets.xcassets */; };
 		DC7E87E11EEC2B8400D47062 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC7E87DF1EEC2B8400D47062 /* LaunchScreen.storyboard */; };
 		DC7E87E91EEC2C6500D47062 /* StreamCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7E87E81EEC2C6500D47062 /* StreamCollectionViewCell.swift */; };
-		DC7E87EB1EEC2CA500D47062 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7E87EA1EEC2CA500D47062 /* Extensions.swift */; };
+		DC7E87EB1EEC2CA500D47062 /* AACustomLayout+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7E87EA1EEC2CA500D47062 /* AACustomLayout+Extensions.swift */; };
 		DC7E87EF1EEC2DC000D47062 /* HorizontalLayoutGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7E87EE1EEC2DC000D47062 /* HorizontalLayoutGroup.swift */; };
 		DC7E87F11EEC2DD000D47062 /* LayoutGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7E87F01EEC2DD000D47062 /* LayoutGroup.swift */; };
 		DC7E87F31EEC2E1200D47062 /* SnapGroupLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7E87F21EEC2E1200D47062 /* SnapGroupLayout.swift */; };
@@ -37,7 +37,7 @@
 		DC7E87E01EEC2B8400D47062 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC7E87E21EEC2B8400D47062 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC7E87E81EEC2C6500D47062 /* StreamCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamCollectionViewCell.swift; sourceTree = "<group>"; };
-		DC7E87EA1EEC2CA500D47062 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		DC7E87EA1EEC2CA500D47062 /* AACustomLayout+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AACustomLayout+Extensions.swift"; sourceTree = "<group>"; };
 		DC7E87EE1EEC2DC000D47062 /* HorizontalLayoutGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalLayoutGroup.swift; sourceTree = "<group>"; };
 		DC7E87F01EEC2DD000D47062 /* LayoutGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutGroup.swift; sourceTree = "<group>"; };
 		DC7E87F21EEC2E1200D47062 /* SnapGroupLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapGroupLayout.swift; sourceTree = "<group>"; };
@@ -82,10 +82,10 @@
 		DC7E87D51EEC2B8400D47062 /* AACustomCollectionViewLayouts */ = {
 			isa = PBXGroup;
 			children = (
-				DC7E87ED1EEC2D9D00D47062 /* LayoutGroups */,
 				DCAE7A3B1EEDDF2B002BBEF2 /* Cells */,
 				DCAE7A3A1EEDDF19002BBEF2 /* Storyboards */,
 				DCAE7A391EEDDEFE002BBEF2 /* ViewControllers */,
+				DC7E87ED1EEC2D9D00D47062 /* LayoutGroups */,
 				DC7E87F81EEC2F3300D47062 /* CustomLayouts */,
 				DCAE7A3C1EEDDF33002BBEF2 /* Other */,
 			);
@@ -146,7 +146,7 @@
 		DCAE7A3C1EEDDF33002BBEF2 /* Other */ = {
 			isa = PBXGroup;
 			children = (
-				DC7E87EA1EEC2CA500D47062 /* Extensions.swift */,
+				DC7E87EA1EEC2CA500D47062 /* AACustomLayout+Extensions.swift */,
 				DC7E87E21EEC2B8400D47062 /* Info.plist */,
 				DC7E87DD1EEC2B8400D47062 /* Assets.xcassets */,
 				DC7E87D61EEC2B8400D47062 /* AppDelegate.swift */,
@@ -241,7 +241,7 @@
 				DC9363361EEC7FF400594626 /* IntroViewController.swift in Sources */,
 				DC7E87D71EEC2B8400D47062 /* AppDelegate.swift in Sources */,
 				DC7E87F71EEC2E7300D47062 /* CircularLayoutGroup.swift in Sources */,
-				DC7E87EB1EEC2CA500D47062 /* Extensions.swift in Sources */,
+				DC7E87EB1EEC2CA500D47062 /* AACustomLayout+Extensions.swift in Sources */,
 				DC7E87FE1EEC34DC00D47062 /* BadooLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
