@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol LayoutGroup {
+public protocol LayoutGroup {
     var numberOfItems: Int {get}
     var groupHeight: CGFloat {get}
     var nextGroupStartY: CGFloat? {get}

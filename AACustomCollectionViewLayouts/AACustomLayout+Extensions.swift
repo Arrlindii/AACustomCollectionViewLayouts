@@ -8,24 +8,24 @@
 
 import UIKit
 
-extension CGFloat {
-    static var fibConstant: CGFloat = 0.61818
+public extension CGFloat {
+    static var aaFibConstant: CGFloat = 0.61818
 }
 
-extension CGRect {
-    var center: CGPoint {
+public extension CGRect {
+    var aaRectCenter: CGPoint {
         return CGPoint(x: self.maxX/2, y: self.maxY/2)
     }
 }
 
-extension UIColor {
-    static var randomColor: UIColor {
+public extension UIColor {
+    static var aaRandomColor: UIColor {
         return UIColor(red:CGFloat(drand48()), green: CGFloat(drand48()), blue: CGFloat(drand48()), alpha: 1.0)
     }
 }
 
-extension NSObject {
-    class var className: String {
+public extension NSObject {
+    class var aaClassName: String {
         return NSStringFromClass(self).components(separatedBy: ".").last!
     }
 }

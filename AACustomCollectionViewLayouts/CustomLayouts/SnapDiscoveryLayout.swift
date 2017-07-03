@@ -9,7 +9,7 @@
 import UIKit
 
 class SnapDiscoveryLayout: AACustomLayout {
-    init(horizontalGroupHeight: CGFloat = 270, snapCustomGroupHeight: CGFloat = 350.0) {
+    public init(horizontalGroupHeight: CGFloat = 270, snapCustomGroupHeight: CGFloat = 350.0) {
         let layoutGroups: [LayoutGroup] = [
             HorizontalLayoutGroup(items: 2, groupHeight: horizontalGroupHeight),
             HorizontalLayoutGroup(items: 3, groupHeight: horizontalGroupHeight),
@@ -20,7 +20,7 @@ class SnapDiscoveryLayout: AACustomLayout {
         super.init(layoutGroups: layoutGroups)
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
 }

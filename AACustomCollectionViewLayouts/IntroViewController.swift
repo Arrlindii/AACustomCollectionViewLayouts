@@ -36,7 +36,7 @@ class IntroViewController: UIViewController {
     }
     
     internal func presentStreamViewController(forLayout layout: AACustomLayout) {
-        let streamVC = storyboard?.instantiateViewController(withIdentifier: StreamViewController.className) as! StreamViewController
+        let streamVC = storyboard?.instantiateViewController(withIdentifier: StreamViewController.aaClassName) as! StreamViewController
         streamVC.currentLayout = layout
         navigationController?.pushViewController(streamVC, animated: true)
     }

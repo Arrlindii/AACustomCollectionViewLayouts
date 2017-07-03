@@ -8,11 +8,11 @@
 
 import UIKit 
 
-class MixedLayot: AACustomLayout {
+public class MixedLayot: AACustomLayout {
     private let horizontalGroupHeight: CGFloat = 270
     private let snapCustomGroupHeight: CGFloat = 350.0
     
-    init() {
+    public init() {
         let layoutGroups: [LayoutGroup] = [
             HorizontalLayoutGroup(items: 1, groupHeight: horizontalGroupHeight),
             GoldenRatioLayoutGroup(items: 5, groupHeight: snapCustomGroupHeight),
@@ -23,7 +23,7 @@ class MixedLayot: AACustomLayout {
         super.init(layoutGroups: layoutGroups)
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
 }

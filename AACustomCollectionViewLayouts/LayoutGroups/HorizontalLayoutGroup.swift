@@ -8,13 +8,13 @@
 
 import UIKit
 
-struct HorizontalLayoutGroup: LayoutGroup {
+public  struct HorizontalLayoutGroup: LayoutGroup {
 
-    var numberOfItems: Int
-    var groupHeight: CGFloat
-    var nextGroupStartY: CGFloat?
+    public var numberOfItems: Int
+    public var groupHeight: CGFloat
+    public var nextGroupStartY: CGFloat?
     
-    func layoutFramesForItemsInRect(_ rect: CGRect) -> [CGRect] {
+    public func layoutFramesForItemsInRect(_ rect: CGRect) -> [CGRect] {
         guard numberOfItems > 0 else {return [CGRect]()}
         let itemWidth = rect.width / CGFloat(numberOfItems)
         let xOffsets: [CGFloat]  = Array(0...numberOfItems - 1).map { itemWidth*CGFloat($0) }
@@ -23,7 +23,7 @@ struct HorizontalLayoutGroup: LayoutGroup {
         }
     }
     
-    init(items: Int, groupHeight: CGFloat) {
+    public  init(items: Int, groupHeight: CGFloat) {
         numberOfItems = items
         self.groupHeight = groupHeight
     }

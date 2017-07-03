@@ -8,22 +8,22 @@
 
 import UIKit
 
-struct CircularLayoutGroup: LayoutGroup {
+public struct CircularLayoutGroup: LayoutGroup {
     
-    var numberOfItems: Int
-    var groupHeight: CGFloat
+    public var numberOfItems: Int
+    public var groupHeight: CGFloat
     var itemWidth: CGFloat
     var itemHeight: CGFloat
-    var nextGroupStartY: CGFloat?
+    public var nextGroupStartY: CGFloat?
     
-    init(items: Int, groupHeight: CGFloat, itemWidth: CGFloat, itemHeight: CGFloat) {
+    public  init(items: Int, groupHeight: CGFloat, itemWidth: CGFloat, itemHeight: CGFloat) {
         numberOfItems = items
         self.groupHeight = groupHeight
         self.itemWidth = itemWidth
         self.itemHeight = itemHeight
     }
     
-    func layoutFramesForItemsInRect(_ rect: CGRect) -> [CGRect]  {
+    public func layoutFramesForItemsInRect(_ rect: CGRect) -> [CGRect]  {
         var frames = [CGRect]()
         
         let angle: CGFloat = CGFloat(2 * Double.pi) / CGFloat(numberOfItems)

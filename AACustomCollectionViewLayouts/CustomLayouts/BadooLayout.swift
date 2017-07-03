@@ -8,9 +8,9 @@
 
 import UIKit
 
-class BadooLayout: AACustomLayout {
+public  class BadooLayout: AACustomLayout {
     
-    init(pictureHeight: CGFloat, extraHeight: CGFloat = 30.0) {
+    public init(pictureHeight: CGFloat, extraHeight: CGFloat = 30.0) {
         let groupHeight: CGFloat = pictureHeight + extraHeight
         let layoutGroups: [LayoutGroup] = [
             BadooGroup(groupHeight: groupHeight, itemWidth: pictureHeight)
@@ -18,7 +18,7 @@ class BadooLayout: AACustomLayout {
         super.init(layoutGroups: layoutGroups)
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 }

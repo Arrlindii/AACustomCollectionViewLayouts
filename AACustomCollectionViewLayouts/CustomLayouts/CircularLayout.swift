@@ -8,6 +8,7 @@
 
 import UIKit
 
+public
 class CircularLayout: AACustomLayout {
     init(itemWidth: CGFloat = 95.0, itemHeight: CGFloat = 95.0, groupHeight: CGFloat = 450, numberOfItemsInGroup items: Int = 7) {
         let layoutGroups: [LayoutGroup] = [
@@ -16,7 +17,7 @@ class CircularLayout: AACustomLayout {
         super.init(layoutGroups: layoutGroups)
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
 }

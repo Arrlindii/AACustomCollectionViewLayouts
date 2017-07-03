@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AACustomLayout: UICollectionViewLayout {
+public class AACustomLayout: UICollectionViewLayout {
 
     var layoutGroups: [LayoutGroup]
     private var lastNumberOfItems = 0
@@ -36,11 +36,11 @@ class AACustomLayout: UICollectionViewLayout {
         super.init()
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("Init with coder has not been implemented")
     }
     
-    override func prepare() {
+    override public func prepare() {
         resetCacheIfNeeded()
         guard cache.isEmpty else {return}
         var column = 0
@@ -88,20 +88,20 @@ class AACustomLayout: UICollectionViewLayout {
         }
     }
     
-    override var collectionViewContentSize : CGSize {
+    override public var collectionViewContentSize : CGSize {
         return CGSize(width: contentWidth, height: contentHeight)
     }
     
-    override func layoutAttributesForItem(at indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
+    override public func layoutAttributesForItem(at indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
         return cache.filter { $0.indexPath == indexPath }.first
     }
     
-    override func shouldInvalidateLayout(forBoundsChange newBounds: CGRect) -> Bool {
+    override public func shouldInvalidateLayout(forBoundsChange newBounds: CGRect) -> Bool {
         boundsGotChanged = collectionView!.bounds != newBounds
         return boundsGotChanged
     }
     
-    override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
+    override public func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
         var layoutAttributes = [UICollectionViewLayoutAttributes]()
         for attributes  in cache {
             if attributes.frame.intersects(rect ) {

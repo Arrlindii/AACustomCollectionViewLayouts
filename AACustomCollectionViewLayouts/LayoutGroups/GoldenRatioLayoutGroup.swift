@@ -8,27 +8,27 @@
 
 import UIKit
 
-class GoldenRatioLayoutGroup: LayoutGroup {
+public  class GoldenRatioLayoutGroup: LayoutGroup {
 
-    var numberOfItems: Int
-    var groupHeight: CGFloat
-    var nextGroupStartY: CGFloat?
+    public var numberOfItems: Int
+    public var groupHeight: CGFloat
+    public var nextGroupStartY: CGFloat?
     private var iteration: Int
     
-    func layoutFramesForItemsInRect(_ rect: CGRect) -> [CGRect] {
+    public func layoutFramesForItemsInRect(_ rect: CGRect) -> [CGRect] {
         var frames = [CGRect]()
-        var xOffset: [CGFloat] = [rect.origin.x , rect.size.width * CGFloat.fibConstant + rect.origin.x]
+        var xOffset: [CGFloat] = [rect.origin.x , rect.size.width * CGFloat.aaFibConstant + rect.origin.x]
         var yOffset = [CGFloat](repeating: rect.origin.y, count: numberOfItems)
         
         if rect.height > rect.width  {
             xOffset = [CGFloat](repeating: rect.origin.x, count: numberOfItems)
-            yOffset = [rect.origin.y, rect.size.height * CGFloat.fibConstant + rect.origin.y]
+            yOffset = [rect.origin.y, rect.size.height * CGFloat.aaFibConstant + rect.origin.y]
         }
         
         for column in 0...1 {
-            var width = rect.width * CGFloat.fibConstant
+            var width = rect.width * CGFloat.aaFibConstant
             if column == 1 {
-                width *= CGFloat.fibConstant
+                width *= CGFloat.aaFibConstant
             }
             
             var height = rect.height
@@ -36,9 +36,9 @@ class GoldenRatioLayoutGroup: LayoutGroup {
             if rect.height > rect.width  {
                 width = rect.width
                 
-                height = rect.height * CGFloat.fibConstant
+                height = rect.height * CGFloat.aaFibConstant
                 if column == 1 {
-                    height *= CGFloat.fibConstant
+                    height *= CGFloat.aaFibConstant
                 }
             }
             
@@ -58,7 +58,7 @@ class GoldenRatioLayoutGroup: LayoutGroup {
         }
     }
     
-    init(items: Int, groupHeight: CGFloat) {
+    public init(items: Int, groupHeight: CGFloat) {
         numberOfItems = items
         self.groupHeight = groupHeight
         iteration = numberOfItems - 1

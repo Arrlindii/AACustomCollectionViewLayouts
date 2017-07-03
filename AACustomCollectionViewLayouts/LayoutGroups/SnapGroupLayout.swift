@@ -8,18 +8,18 @@
 
 import UIKit
 
-enum SnapGroupedDirection {
+public enum SnapGroupedDirection {
     case left, right
 }
 
-struct SnapGroupLayout: LayoutGroup {
+public struct SnapGroupLayout: LayoutGroup {
     
-    var numberOfItems: Int
+    public var numberOfItems: Int
     var direction: SnapGroupedDirection
-    var groupHeight: CGFloat
-    var nextGroupStartY: CGFloat?
+    public var groupHeight: CGFloat
+    public var nextGroupStartY: CGFloat?
     
-    func layoutFramesForItemsInRect(_ rect: CGRect) -> [CGRect] {
+    public func layoutFramesForItemsInRect(_ rect: CGRect) -> [CGRect] {
         return direction == .right  ? layoutFramesForItemsInRectFromRight(rect) : layoutFramesForItemsInRectFromLeft(rect)
     }
     
@@ -46,7 +46,7 @@ struct SnapGroupLayout: LayoutGroup {
         }
     }
     
-    init(direction: SnapGroupedDirection, groupHeight: CGFloat) {
+    public init(direction: SnapGroupedDirection, groupHeight: CGFloat) {
         numberOfItems = 3
         self.direction = direction
         self.groupHeight = groupHeight
