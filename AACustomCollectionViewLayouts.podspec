@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'AACustomCollectionViewLayouts'
-  s.version          = '0.2.0'
+  s.version          = '0.3.0'
   s.summary          = 'Custom CollectionView Layouts'
  
   s.description      = <<-DESC 
