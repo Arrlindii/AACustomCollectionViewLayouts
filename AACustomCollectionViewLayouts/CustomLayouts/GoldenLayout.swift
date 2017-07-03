@@ -9,7 +9,7 @@
 import UIKit
 
 public class GoldenLayout: AACustomLayout {
-    init(items: Int = 5, groupHeight: CGFloat = 350.0) {
+    public init(items: Int = 5, groupHeight: CGFloat = 350.0) {
         let layoutGroups: [LayoutGroup] = [
             GoldenRatioLayoutGroup(items: items, groupHeight: groupHeight)
         ]

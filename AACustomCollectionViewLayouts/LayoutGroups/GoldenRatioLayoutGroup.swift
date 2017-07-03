@@ -8,7 +8,7 @@
 
 import UIKit
 
-public  class GoldenRatioLayoutGroup: LayoutGroup {
+public class GoldenRatioLayoutGroup: LayoutGroup {
 
     public var numberOfItems: Int
     public var groupHeight: CGFloat

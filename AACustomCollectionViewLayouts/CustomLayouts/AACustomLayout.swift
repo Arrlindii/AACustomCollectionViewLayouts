@@ -15,8 +15,8 @@ public class AACustomLayout: UICollectionViewLayout {
     private var currentLayoutGroupIndex = -1
     private var counter  = 0
     private var yOffset: CGFloat = 0
-    var cellPaddingX: CGFloat = 2
-    var cellPaddingY: CGFloat = 2
+    public var cellPaddingX: CGFloat = 2
+    public var cellPaddingY: CGFloat = 2
     private var baseWidth: CGFloat {
         return collectionView!.frame.width
     }
@@ -30,7 +30,7 @@ public class AACustomLayout: UICollectionViewLayout {
         return collectionView!.bounds.width - (insets.left + insets.right)
     }
     
-    init(layoutGroups: [LayoutGroup]) {
+    public init(layoutGroups: [LayoutGroup]) {
         self.layoutGroups = layoutGroups
         currentLayoutGroup = layoutGroups.first!
         super.init()

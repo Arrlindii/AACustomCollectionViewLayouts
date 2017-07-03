@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SnapDiscoveryLayout: AACustomLayout {
+public class SnapDiscoveryLayout: AACustomLayout {
     public init(horizontalGroupHeight: CGFloat = 270, snapCustomGroupHeight: CGFloat = 350.0) {
         let layoutGroups: [LayoutGroup] = [
             HorizontalLayoutGroup(items: 2, groupHeight: horizontalGroupHeight),

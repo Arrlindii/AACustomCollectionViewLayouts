@@ -8,9 +8,8 @@
 
 import UIKit
 
-public
-class CircularLayout: AACustomLayout {
-    init(itemWidth: CGFloat = 95.0, itemHeight: CGFloat = 95.0, groupHeight: CGFloat = 450, numberOfItemsInGroup items: Int = 7) {
+public class CircularLayout: AACustomLayout {
+    public init(itemWidth: CGFloat = 95.0, itemHeight: CGFloat = 95.0, groupHeight: CGFloat = 450, numberOfItemsInGroup items: Int = 7) {
         let layoutGroups: [LayoutGroup] = [
             CircularLayoutGroup(items: items, groupHeight: groupHeight, itemWidth: itemWidth, itemHeight: itemHeight)
         ]

@@ -8,7 +8,7 @@
 
 import UIKit
 
-public  struct HorizontalLayoutGroup: LayoutGroup {
+public struct HorizontalLayoutGroup: LayoutGroup {
 
     public var numberOfItems: Int
     public var groupHeight: CGFloat
@@ -23,7 +23,7 @@ public  struct HorizontalLayoutGroup: LayoutGroup {
         }
     }
     
-    public  init(items: Int, groupHeight: CGFloat) {
+    public init(items: Int, groupHeight: CGFloat) {
         numberOfItems = items
         self.groupHeight = groupHeight
     }

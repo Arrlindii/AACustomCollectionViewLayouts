@@ -16,7 +16,7 @@ public struct CircularLayoutGroup: LayoutGroup {
     var itemHeight: CGFloat
     public var nextGroupStartY: CGFloat?
     
-    public  init(items: Int, groupHeight: CGFloat, itemWidth: CGFloat, itemHeight: CGFloat) {
+    public init(items: Int, groupHeight: CGFloat, itemWidth: CGFloat, itemHeight: CGFloat) {
         numberOfItems = items
         self.groupHeight = groupHeight
         self.itemWidth = itemWidth
