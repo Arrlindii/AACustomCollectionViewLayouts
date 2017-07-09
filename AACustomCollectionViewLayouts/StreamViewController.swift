@@ -34,7 +34,6 @@ extension StreamViewController: UICollectionViewDataSource {
         cell.mainView.backgroundColor = UIColor.aaRandomColor
         cell.titleLabel?.text = dataSource[indexPath.item]
         cell.imageView?.image = UIImage(named:  dataSource[indexPath.item])
-        cell.makeRounded()
         return cell
     }
 }

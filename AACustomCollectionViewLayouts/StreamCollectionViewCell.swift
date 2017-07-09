@@ -16,9 +16,11 @@ class StreamCollectionViewCell: UICollectionViewCell {
     
     override func apply(_ layoutAttributes: UICollectionViewLayoutAttributes) {
         super.apply(layoutAttributes)
-        mainView.layer.cornerRadius = layoutAttributes.frame.width / 2
+        layoutIfNeeded()
     }
     
-    func makeRounded() {
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        mainView.layer.cornerRadius = mainView.bounds.size.width / 2
     }
 }
